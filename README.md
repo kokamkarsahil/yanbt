@@ -2,7 +2,7 @@
 
 YANBT (Yet Another Nuxt Blog Theme) made using Nuxt Content v2.
 
-> [Demo](yanbt.netlify.app/)
+> [Demo](https://yanbt.netlify.app)
 
 ## Features:
 
