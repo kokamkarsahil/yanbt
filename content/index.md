@@ -1,0 +1,4 @@
+---
+title: "YANBT"
+layout: blog
+---
