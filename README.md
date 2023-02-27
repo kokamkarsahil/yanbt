@@ -5,6 +5,11 @@ YANBT (Yet Another Nuxt Blog Theme) made using Nuxt Content v2.
 > [Demo](https://yanbt.netlify.app)
 
 ## Features:
+- Easy Setup
+- Write post in markdown with MDC support thanks to [nuxt/content](https://github.com/nuxt/content)
+- Auto generate og:image using Satori thanks to [nuxt-seo-kit](https://github.com/harlan-zw/nuxt-seo-kit)
+- Image optimization using Nuxt image
+- Auto generated RSS Feed
 
 Made possible thanks to all this packages:
 
