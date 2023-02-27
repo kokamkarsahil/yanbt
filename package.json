@@ -1,5 +1,12 @@
 {
+  "name": "YANBT",
+  "homepage": "https://yanbt.netlify.app",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/sahil/yanbt.git"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
