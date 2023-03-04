@@ -6,6 +6,7 @@
     :width="width"
     :height="height"
     loading="lazy"
+    class="image-zoomable"
   />
 </template>
 
