@@ -26,6 +26,12 @@ export default defineNuxtConfig({
   content: {
     // https://content.nuxtjs.org/api/
     markdown: {
+      remarkPlugins: [
+        'remark-math'
+      ],
+      rehypePlugins: [
+        'rehype-mathjax'
+      ],
       toc: {
         depth: 3,
         searchDepth: 3
