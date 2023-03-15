@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   const selector = '.image-zoomable'
   const zoom: Zoom = mediumZoom(selector, {})
 
-  nuxtApp.hook('link:prefetch', () => {
+  nuxtApp.hook('page:transition:finish', () => {
     zoom.detach(selector)
       .attach(selector)
   })
