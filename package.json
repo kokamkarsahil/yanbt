@@ -34,6 +34,7 @@
     "@tailwindcss/line-clamp": "^0.4.4",
     "rehype-mathjax": "^6.0.0",
     "remark-math": "^6.0.0",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "sitemap": "^7.1.1"
   }
 }
