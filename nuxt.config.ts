@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json']
     }
   },
-  extends: ['@nuxt-themes/elements', 'nuxt-seo-kit'],
+  extends: ['@nuxt-themes/elements'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/image-edge',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxtjs/seo'
   ],
   colorMode: {
     classSuffix: ''
