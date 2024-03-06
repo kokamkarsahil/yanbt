@@ -12,6 +12,14 @@ export default defineNuxtConfig({
       language: 'en' // prefer more explicit language codes like `en-AU` over `en`
     }
   },
+  nitro: {
+    node: true,
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/sitemap.xml', '/rss.xml'],
+      ignore: ['/__pinceau_tokens_config.json', '/__pinceau_tokens_schema.json']
+    }
+  },
   extends: ['@nuxt-themes/elements', 'nuxt-seo-kit'],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
