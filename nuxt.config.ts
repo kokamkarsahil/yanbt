@@ -3,15 +3,13 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
-  telemetry: false,
-  runtimeConfig: {
-    public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://yanbt.netlify.app',
-      siteName: process.env.NUXT_PUBLIC_SITE_NAME || 'YANBT',
-      siteDescription: process.env.NUXT_PUBLIC_SITE_DESCRIPTION || 'Yet Another Nuxt Blog Theme!',
-      language: 'en' // prefer more explicit language codes like `en-AU` over `en`
-    }
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://yanbt.netlify.app',
+    name: process.env.NUXT_PUBLIC_SITE_NAME || 'YANBT',
+    description: process.env.NUXT_PUBLIC_SITE_DESCRIPTION || 'Yet Another Nuxt Blog Theme!',
+    language: 'en', // 
   },
+  telemetry: false,
   nitro: {
     node: true,
     prerender: {
