@@ -2,11 +2,11 @@ import RSS from 'rss'
 import { serverQueryContent } from '#content/server'
 
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig()
+  const config = useSiteConfig(event)
   const feed = new RSS({
-    title: config.public.siteName,
-    site_url: config.public.siteUrl,
-    feed_url: `${config.public.siteUrl}/rss.xml`
+    title: config.name,
+    site_url: config.url,
+    feed_url: `${config.url}/rss.xml`
   })
 
   const docs = await serverQueryContent(event)
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
   for (const doc of blogPosts) {
     feed.item({
       title: doc.title ?? '-',
-      url: `${useRuntimeConfig().siteUrl}${doc._path}`,
+      url: `${config.url}${doc._path}`,
       date: doc.publishDate,
       description: doc.description
     })

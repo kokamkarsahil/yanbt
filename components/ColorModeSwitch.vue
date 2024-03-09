@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
+const siteConfig = useSiteConfig()
 const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light'))
 </script>
 
@@ -15,7 +16,7 @@ const onClick = () => (colorMode.value === 'light' ? (colorMode.preference = 'da
       </button>
     </div>
     <h2 class="mt-4 dark:text-white">
-      {{ useRuntimeConfig().siteDescription }}
+      {{ siteConfig.description }}
     </h2>
   </div>
 </template>
