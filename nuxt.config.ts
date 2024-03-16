@@ -29,7 +29,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/image-edge',
     'nuxt-icon',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@nuxthq/studio'
   ],
   colorMode: {
     classSuffix: ''
