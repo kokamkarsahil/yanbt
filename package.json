@@ -8,7 +8,7 @@
     "url": "https://github.com/kokamkarsahil/yanbt"
   },
   "scripts": {
-    "build": "nuxt build",
+    "build": "echo use generate",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

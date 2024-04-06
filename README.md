@@ -19,3 +19,6 @@ Made possible thanks to all this packages:
 - [nuxt/image](https://github.com/nuxt/image)
 
 If you find any issue feel free to open an [issue](https://codeberg.org/sahil/yanbt/issues)
+
+## Deploying
+- Run `npm run generate` and then host the generated `dist` folder to any static hosting site
