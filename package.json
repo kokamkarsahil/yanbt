@@ -19,6 +19,7 @@
   "devDependencies": {
     "@nuxt-themes/elements": "^0.9.5",
     "@nuxt/content": "^2.13.2",
+    "@nuxt/icon": "^1.4.5",
     "@nuxt/image-edge": "1.3.0-28493895.369b747",
     "@nuxthq/studio": "^2.0.3",
     "@nuxtjs/color-mode": "^3.4.2",
@@ -28,8 +29,7 @@
     "@tailwindcss/typography": "^0.5.14",
     "eslint": "^9.9.0",
     "medium-zoom": "^1.1.0",
-    "nuxt": "^3.12.4",
-    "nuxt-icon": "1.0.0-beta.7"
+    "nuxt": "^3.12.4"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",

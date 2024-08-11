@@ -30,6 +30,9 @@ importers:
       '@nuxt/content':
         specifier: ^2.13.2
         version: 2.13.2(ioredis@5.4.1)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.2.0)(encoding@0.1.13)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.5)(typescript@5.5.4)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5)))(rollup@4.20.0)(vue@3.4.37(typescript@5.5.4))
+      '@nuxt/icon':
+        specifier: ^1.4.5
+        version: 1.4.5(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))(vue@3.4.37(typescript@5.5.4))
       '@nuxt/image-edge':
         specifier: 1.3.0-28493895.369b747
         version: 1.3.0-28493895.369b747(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.20.0)
@@ -60,9 +63,6 @@ importers:
       nuxt:
         specifier: ^3.12.4
         version: 3.12.4(@parcel/watcher@2.4.1)(@types/node@22.2.0)(encoding@0.1.13)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.5)(typescript@5.5.4)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))
-      nuxt-icon:
-        specifier: 1.0.0-beta.7
-        version: 1.0.0-beta.7(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))(vue@3.4.37(typescript@5.5.4))
 
 packages:
 
@@ -871,8 +871,8 @@ packages:
   '@iconify/utils@2.1.30':
     resolution: {integrity: sha512-bY0IO5xLOlbzJBnjWLxknp6Sss3yla03sVY9VeUz9nT6dbc+EGKlLfCt+6uytJnWm5CUvTF/BNotsLWF7kI61A==}
 
-  '@iconify/vue@4.1.2':
-    resolution: {integrity: sha512-CQnYqLiQD5LOAaXhBrmj1mdL2/NCJvwcC4jtW2Z8ukhThiFkLDkutarTOV2trfc9EXqUqRs0KqXOL9pZ/IyysA==}
+  '@iconify/vue@4.1.3-beta.1':
+    resolution: {integrity: sha512-N7iEOnWfhjbMqiyGMhotJKip23nrK5l3+T1hQwpEjKeMD2o4zOjm8zmeEfOOH81EXllhhOm7upR8jcH499YRWA==}
     peerDependencies:
       vue: '>=3'
 
@@ -968,6 +968,9 @@ packages:
     hasBin: true
     peerDependencies:
       vite: '*'
+
+  '@nuxt/icon@1.4.5':
+    resolution: {integrity: sha512-h0Fe1VhpVB5bcQutsH37G46DyE2u+j5j7+0sFbxT2ovRm+uILqo5ONXWe4WuJ20AtngvdpqvnqT25ZQtzx4K9A==}
 
   '@nuxt/image-edge@1.3.0-28493895.369b747':
     resolution: {integrity: sha512-WNUIXOjZp8dNWheYH5qxvQBz3bz2rhNvUan8GvQ5cuaG1N2i2uqgOYdxrXREELnfxPqsEW2h+n1n+UCybHDxKQ==}
@@ -4078,9 +4081,6 @@ packages:
     resolution: {integrity: sha512-Y5/tuZuZOlD4GluAjcTU6JlhtEeg7/92VEfoV814t2uTuZK+b9RokJeGtrMotXuCJ4vuT1Is7M+pkPm+vY/tXA==}
     hasBin: true
 
-  nuxt-icon@1.0.0-beta.7:
-    resolution: {integrity: sha512-HdEn1sZGmkIX44L5rZ8YUMdIdVCpeBXycO2DdrqZmFilixcHax0XYdehc1VD6Kl9Sxg8B7sKPMelmDXVTbDwIw==}
-
   nuxt-link-checker@3.1.0:
     resolution: {integrity: sha512-Au2ymyvdyK1vNFzE/LdgnjkhhTxjP7iaL9TL/Bsh7DwBbEjdo0+MrqYHULXs54MfCa1daafxMacvsLzOQqC1xQ==}
 
@@ -6465,7 +6465,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@iconify/vue@4.1.2(vue@3.4.37(typescript@5.5.4))':
+  '@iconify/vue@4.1.3-beta.1(vue@3.4.37(typescript@5.5.4))':
     dependencies:
       '@iconify/types': 2.0.0
       vue: 3.4.37(typescript@5.5.4)
@@ -6712,6 +6712,26 @@ snapshots:
       - rollup
       - supports-color
       - utf-8-validate
+
+  '@nuxt/icon@1.4.5(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))(vue@3.4.37(typescript@5.5.4))':
+    dependencies:
+      '@iconify/collections': 1.0.447
+      '@iconify/types': 2.0.0
+      '@iconify/utils': 2.1.30
+      '@iconify/vue': 4.1.3-beta.1(vue@3.4.37(typescript@5.5.4))
+      '@nuxt/devtools-kit': 1.3.9(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))
+      '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.20.0)
+      consola: 3.2.3
+      fast-glob: 3.3.2
+      local-pkg: 0.5.0
+      mlly: 1.7.1
+      pathe: 1.1.2
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - vite
+      - vue
 
   '@nuxt/image-edge@1.3.0-28493895.369b747(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.20.0)':
     dependencies:
@@ -10818,25 +10838,6 @@ snapshots:
       - magicast
       - rollup
       - supports-color
-
-  nuxt-icon@1.0.0-beta.7(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))(vue@3.4.37(typescript@5.5.4)):
-    dependencies:
-      '@iconify/collections': 1.0.447
-      '@iconify/types': 2.0.0
-      '@iconify/utils': 2.1.30
-      '@iconify/vue': 4.1.2(vue@3.4.37(typescript@5.5.4))
-      '@nuxt/devtools-kit': 1.3.9(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))
-      '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.20.0)
-      consola: 3.2.3
-      fast-glob: 3.3.2
-      local-pkg: 0.5.0
-      pathe: 1.1.2
-    transitivePeerDependencies:
-      - magicast
-      - rollup
-      - supports-color
-      - vite
-      - vue
 
   nuxt-link-checker@3.1.0(magicast@0.3.4)(rollup@4.20.0)(vite@5.4.0(@types/node@22.2.0)(terser@5.31.5))(vue@3.4.37(typescript@5.5.4)):
     dependencies:
